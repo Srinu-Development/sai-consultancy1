@@ -564,36 +564,35 @@ content="website">
         </div>
 
     </div>
-    <!-- ===========================
+   <!-- ===========================
      CONTACT SECTION
 =========================== -->
 
-<section class="contact">
+<section class="contact" id="contact">
 
     <div class="container contact-container">
 
-        <!-- Left Side -->
+        <!-- ===========================
+             LEFT SIDE - CONTACT INFO
+        =========================== -->
 
         <div class="contact-info">
 
             <span class="section-badge">
-
                 CONTACT US
-
             </span>
 
             <h2>
-
                 Get In Touch Today
-
             </h2>
 
             <p>
-
                 Contact us for Home Loans, Personal Loans,
-                Business Loans and LIC Insurance services.
-
+                Business Loans, Real Estate and LIC Insurance services.
             </p>
+
+
+            <!-- LOCATION -->
 
             <div class="contact-item">
 
@@ -601,7 +600,7 @@ content="website">
 
                 <span>
 
-                    Sai Consultancy Services<br>
+                    <strong>Sai Consultancy Services</strong><br>
 
                     Narsipatnam, Andhra Pradesh
 
@@ -609,17 +608,25 @@ content="website">
 
             </div>
 
+
+            <!-- PHONE -->
+
             <div class="contact-item">
 
                 <i class="fa-solid fa-phone"></i>
 
                 <span>
 
-                    +91 9866779493
+                    <a href="tel:+919866779493">
+                        +91 9866779493
+                    </a>
 
                 </span>
 
             </div>
+
+
+            <!-- EMAIL -->
 
             <div class="contact-item">
 
@@ -627,78 +634,229 @@ content="website">
 
                 <span>
 
-                    info@saiconsultancy.com
+                    <a href="mailto:saiconsultancys1@gmail.com">
+                        saiconsultancys1@gmail.com
+                    </a>
 
                 </span>
 
             </div>
 
+
+            <!-- ===========================
+                 CALL & WHATSAPP BUTTONS
+            =========================== -->
+
             <div class="contact-buttons">
 
-                <a href="tel:9866779493" class="call-btn2">
+
+                <!-- CALL BUTTON -->
+
+                <a href="tel:+919866779493"
+                   class="call-btn2">
+
+                    <i class="fa-solid fa-phone"></i>
 
                     Call Now
 
                 </a>
 
-                <a href="https://wa.me/919866779493" class="whatsapp-btn">
+
+                <!-- WHATSAPP BUTTON -->
+
+                <a href="https://wa.me/919866779493"
+                   class="whatsapp-btn"
+                   target="_blank"
+                   rel="noopener">
+
+                    <i class="fa-brands fa-whatsapp"></i>
 
                     WhatsApp
 
                 </a>
 
+
             </div>
 
         </div>
 
-        <!-- Right Side -->
+
+
+        <!-- ===========================
+             RIGHT SIDE - CONTACT FORM
+        =========================== -->
 
         <div class="contact-form">
 
-            <form>
 
-                <input type="text"
-                       placeholder="Full Name"
-                       required>
+            <!-- FORM SUBMIT -->
 
-                <input type="email"
-                       placeholder="Email Address"
-                       required>
+            <form
+                action="https://formsubmit.co/saiconsultancys1@gmail.com"
+                method="POST">
 
-                <input type="tel"
-                       placeholder="Mobile Number"
-                       required>
 
-                <select required>
+                <!-- FULL NAME -->
 
-                    <option>Select Service</option>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                >
 
-                    <option>Home Loan</option>
 
-                    <option>Construction Loan</option>
+                <!-- EMAIL -->
 
-                    <option>Personal Loan</option>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                >
 
-                    <option>Business Loan</option>
 
-                    <option>LIC Insurance</option>
+                <!-- MOBILE -->
+
+                <input
+                    type="tel"
+                    name="mobile"
+                    placeholder="Mobile Number"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    required
+                >
+
+
+                <!-- SERVICE -->
+
+                <select
+                    name="service"
+                    required
+                >
+
+                    <option value="">
+                        Select Service
+                    </option>
+
+                    <option value="Home Loan">
+                        Home Loan
+                    </option>
+
+                    <option value="Construction Loan">
+                        Construction Loan
+                    </option>
+
+                    <option value="Loan Against Property">
+                        Loan Against Property
+                    </option>
+
+                    <option value="Take Over & Top-Up Loan">
+                        Take Over & Top-Up Loan
+                    </option>
+
+                    <option value="Personal Loan">
+                        Personal Loan
+                    </option>
+
+                    <option value="Business Loan">
+                        Business Loan
+                    </option>
+
+                    <option value="LIC Insurance">
+                        LIC Insurance
+                    </option>
+
+                    <option value="Village Plots">
+                        Village Plots
+                    </option>
+
+                    <option value="Flats">
+                        Flats
+                    </option>
+
+                    <option value="Luxury Villas">
+                        Luxury Villas
+                    </option>
+
+                    <option value="Commercial Lands">
+                        Commercial Lands
+                    </option>
+
+                    <option value="Agricultural Lands">
+                        Agricultural Lands
+                    </option>
+
+                    <option value="Farm Houses">
+                        Farm Houses
+                    </option>
 
                 </select>
 
-                <textarea rows="5"
-                          placeholder="Message"></textarea>
 
-                <button type="submit">
+                <!-- MESSAGE -->
+
+                <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                ></textarea>
+
+
+                <!-- ===========================
+                     FORMSUBMIT SETTINGS
+                =========================== -->
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Enquiry - Sai Consultancy Services"
+                >
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table"
+                >
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="false"
+                >
+
+
+                <!-- SUCCESS PAGE -->
+
+                <input
+                    type="hidden"
+                    name="_next"
+                    value="https://yourwebsite.com/thank-you.html"
+                >
+
+
+                <!-- SUBMIT BUTTON -->
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+
+                    <i class="fa-solid fa-paper-plane"></i>
 
                     Submit Enquiry
 
                 </button>
+
 
             </form>
 
         </div>
 
     </div>
+
+</section>
     <!-- ===========================
      GOOGLE MAP
 =========================== -->
@@ -819,8 +977,7 @@ content="website">
 
                 ☎ +91 9866779493<br><br>
 
-                ✉ info@saiconsultancy.com
-
+                ✉ saiconsultancys1@gmail.com
             </p>
 
             <div class="social-icons">
